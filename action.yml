@@ -9,6 +9,7 @@ inputs:
 outputs:
   time: # id of output
     description: 'The time we greeted you'
+  ls: # list the directory
 runs:
   using: 'docker'
   image: 'Dockerfile'
