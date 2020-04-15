@@ -3,7 +3,6 @@ FROM ubuntu
 WORKDIR /usr/src/app
 COPY . ./
 # Copies your code file from your action repository to the filesystem path `/` of the container
-COPY entrypoint.sh /entrypoint.sh
 
 #DD entrypoint.sh /entrypoint.sh
 RUN  apt-get update \
@@ -28,8 +27,11 @@ RUN  apt-get update \
   && apt-get install apt-transport-https \
   && apt-get update \
   && apt-get install azure-cli \
-  && apt-get install -y dotnet-sdk-2.2 \
-RUN chmod +x /entrypoint.sh
+  && apt-get install -y dotnet-sdk-2.2 
+
+#RUN chmod +x /entrypoint.sh
+
+COPY entrypoint.sh /entrypoint.sh
 
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
