@@ -1,4 +1,4 @@
-# action.yml
+# action.yml3
 name: 'Hello World'
 description: 'Greet someone and record the time'
 inputs:
