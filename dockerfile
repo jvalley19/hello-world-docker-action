@@ -1,5 +1,5 @@
 # Container image that runs your code
-FROM github/docker-cli:master
+FROM ubuntu
 WORKDIR /usr/src/app
 COPY . ./
 # Copies your code file from your action repository to the filesystem path `/` of the container
