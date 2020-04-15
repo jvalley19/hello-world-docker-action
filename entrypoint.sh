@@ -4,7 +4,8 @@ echo "Hi dkiummy"
 echo "Hello $1"
 echo "this is the outer container"
 
-ls
+echo $PWD
+echo $(ls)
 echo "this is the inner contianer"
 
 
@@ -15,5 +16,3 @@ echo "::set-output name=etime::$time"
 file=$(ls)
 echo "::set-output name=ls::$file"
 
-
-.\module\orchestration\creation.ps1
