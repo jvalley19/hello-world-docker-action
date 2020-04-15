@@ -8,8 +8,7 @@ jobs:
     - name: Hello world action step
       id: hello
       uses: jvalley19/hello-world-docker-action@master
-      with:
-        docker run -v "/HELLO-WORLD-DOCKER-ACTION/tree/master/orchestration":"/usr/src/app/orchestration"  
+      #with: 
         #who-to-greet: 
     # Use the output from the `hello` step
     - name: Get the output time
