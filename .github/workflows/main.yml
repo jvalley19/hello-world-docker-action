@@ -2,12 +2,9 @@ on: [push]
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-latest
-    name: A job to say hello
     steps:
     - name: Hello world action step
-      id: hello
-      uses: jvalley19/hello-world-docker-action@master
+      uses: docker://jvalley19/valley23:myaction
       #with: 
         #who-to-greet: 
     # Use the output from the `hello` step
