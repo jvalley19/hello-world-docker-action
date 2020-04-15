@@ -5,5 +5,5 @@ echo "Hello $1"
 time=$(date)
 help='help'
 echo "::set-output name=etime::$time"
-#file=$(ls)
+file=$(ls)
 #echo "::set-output name=ls::$file"
