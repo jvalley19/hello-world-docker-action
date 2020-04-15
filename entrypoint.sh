@@ -3,7 +3,8 @@
 echo "Hi dkiummy"
 echo "Hello $1"
 echo "this is the outer container"
-
+mkdir -p $SOURCE_PATH
+echo $SOURCE_PATH
 echo $PWD
 echo $(ls)
 echo "this is the inner contianer"
