@@ -5,7 +5,6 @@ jobs:
     runs-on: ubuntu-latest
     name: A job to say hello
     steps:
-    - uses: actions/checkout@master
     - name: Hello world action step
       id: hello
       uses: actions/hello-world-docker-action@master
