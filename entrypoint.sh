@@ -11,7 +11,7 @@ echo "this is the inner contianer"
 
 docker run \
   --mount type=bind,source=$SOURCE_PATH,destination=/root \
-  --entrypoint "/bin/ls" \
+  --entrypoint "/usr/src/app" \
   --tty \
   github/docker-cli:master \
   /root
