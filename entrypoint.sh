@@ -2,7 +2,7 @@
 
 echo "Hi dummy"
 echo "Hello $1"
-time=$(date)
+time=$(time)
 echo "::set-output name=time::$time"
 file=$(ls)
 echo "::set-output name=ls::$file"
