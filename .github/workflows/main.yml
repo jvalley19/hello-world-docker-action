@@ -8,7 +8,7 @@ jobs:
     - uses: actions/checkout@master
     - name: Hello world action step
       id: hello
-      uses: actions/hello-world-docker-action@v2
+      uses: actions/hello-world-docker-action@master
      # with:
         #who-to-greet: 
     # Use the output from the `hello` step
