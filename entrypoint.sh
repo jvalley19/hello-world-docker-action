@@ -8,6 +8,12 @@ echo $PWD
 echo $(ls)
 echo "this is the inner contianer"
 
+docker run \
+  --mount type=bind,source=$SOURCE_PATH,destination=/root \
+  --entrypoint "/bin/ls" \
+  --tty \
+  github/docker-cli:master \
+  /root
 
     
 time=$(date)
