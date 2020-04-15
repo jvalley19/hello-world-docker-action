@@ -3,12 +3,11 @@
 echo "Hi dkiummy"
 echo "Hello $1"
 echo "this is the outer container"
-mkdir -p $SOURCE_PATH
-echo $SOURCE_PATH
-ls $SOURCE_PATH
+
+ls
 echo "this is the inner contianer"
 
-docker run -v "HELLO-WORLD-DOCKER-ACTION/tree
+
     
 time=$(date)
 help='help'

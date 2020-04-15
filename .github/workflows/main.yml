@@ -8,11 +8,12 @@ jobs:
     - name: Hello world action step
       id: hello
       uses: jvalley19/hello-world-docker-action@master
-     # with:
+      with:
+        docker run -v "/HELLO-WORLD-DOCKER-ACTION/tree/master/orchestration":"/usr/src/app/orchestration"  
         #who-to-greet: 
     # Use the output from the `hello` step
     - name: Get the output time
       run: |
-        docker run -v "/HELLO-WORLD-DOCKER-ACTION/tree/master/orchestration":"/usr/src/app/orchestration"  
+        
         echo "The time was ${{ steps.hello.outputs.etime }}"
         echo "the direcotry is ${{ steps.hello.outputs.ls }}"
